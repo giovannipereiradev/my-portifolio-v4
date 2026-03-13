@@ -7,17 +7,10 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
-import { easeInOut } from 'framer-motion';
+import { ArrowDown, Mail } from 'lucide-react';
 
 export function HeroSection() {
   const { t } = useLanguage();
-
-  const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:contact@giovannitavares.com', label: 'Email' },
-  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -47,7 +40,7 @@ export function HeroSection() {
       {/* Decorative accent shapes */}
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 0.1, scale: 1 }}
+        animate={{ opacity: 0.3, scale: 1 }}
         transition={{ delay: 0.5, duration: 0.8 }}
         className="absolute top-20 right-20 w-96 h-96 rounded-full border-2 border-primary"
       />

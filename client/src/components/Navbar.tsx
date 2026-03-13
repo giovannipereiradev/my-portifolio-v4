@@ -43,8 +43,8 @@ export function Navbar({ activeSection, onNavigate }: NavbarProps) {
       <div className="container flex items-center justify-between py-4">
         {/* Logo/Brand */}
         <motion.div
-          whileHover={{ scale: 1.05 }}
-          className="font-mono text-lg font-bold text-foreground"
+          whileHover={{ y: -3 }}
+          className="font-mono text-lg font-bold text-foreground cursor-pointer"
         >
           GT
         </motion.div>
@@ -55,7 +55,7 @@ export function Navbar({ activeSection, onNavigate }: NavbarProps) {
             <motion.button
               key={item.id}
               onClick={() => handleNavClick(item.id)}
-              whileHover={{ y: -2 }}
+              whileHover={{ y: -3 }}
               className={`font-mono text-sm transition-colors relative ${
                 activeSection === item.id
                   ? 'text-foreground'
@@ -79,33 +79,30 @@ export function Navbar({ activeSection, onNavigate }: NavbarProps) {
         {/* Controls: Theme & Language */}
         <div className="flex items-center gap-2">
           {/* Language Toggle */}
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setLanguage(language === 'pt' ? 'en' : 'pt')}
-              title={`Switch to ${language === 'pt' ? 'English' : 'Português'}`}
-              className="font-mono text-xs"
-            >
-              <Globe className="h-4 w-4" />
-              <span className="ml-1">{language.toUpperCase()}</span>
-            </Button>
+          <motion.div 
+            whileHover={{ y: -3 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => setLanguage(language === 'pt' ? 'en' : 'pt')}
+            className="cursor-pointer p-2 flex items-center gap-1 font-mono text-xs"
+            title={`Switch to ${language === 'pt' ? 'English' : 'Português'}`}
+          >
+            <Globe className="h-4 w-4" />
+            <span>{language.toUpperCase()}</span>
           </motion.div>
 
           {/* Theme Toggle */}
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={toggleTheme}
-              title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
-            >
-              {theme === 'light' ? (
-                <Moon className="h-4 w-4" />
-              ) : (
-                <Sun className="h-4 w-4" />
-              )}
-            </Button>
+          <motion.div 
+            whileHover={{ y: -3 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={toggleTheme}
+            className="cursor-pointer p-2"
+            title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+          >
+            {theme === 'light' ? (
+              <Moon className="h-4 w-4" />
+            ) : (
+              <Sun className="h-4 w-4" />
+            )}
           </motion.div>
         </div>
       </div>

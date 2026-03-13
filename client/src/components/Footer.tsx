@@ -21,9 +21,6 @@ export function Footer() {
           <p className="font-mono text-sm text-muted-foreground">
             © {currentYear} Giovanni Tavares. All rights reserved.
           </p>
-          <p className="font-mono text-xs text-muted-foreground">
-            The initial integration prompt was sourced from 21st.
-          </p>
         </motion.div>
       </div>
     </footer>

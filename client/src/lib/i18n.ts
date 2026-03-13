@@ -44,9 +44,9 @@ export const translations = {
     // Contact Section
     contact: {
       title: 'Contato',
-      email: 'Email',
       github: 'GitHub',
       linkedin: 'LinkedIn',
+      credly: 'Credly'
     },
     // Theme and Language
     theme: {
@@ -96,9 +96,9 @@ export const translations = {
     // Contact Section
     contact: {
       title: 'Contact',
-      email: 'Email',
       github: 'GitHub',
       linkedin: 'LinkedIn',
+      credly: 'Credly'
     },
     // Theme and Language
     theme: {

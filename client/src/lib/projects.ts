@@ -73,19 +73,19 @@ export const socialLinks: SocialLink[] = [
   {
     id: 'github',
     name: 'GitHub',
-    url: 'https://github.com/giovanni-tavares',
+    url: 'https://github.giovannitavares.com/',
     icon: 'Github',
   },
   {
     id: 'linkedin',
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/giovanni-tavares',
+    url: 'https://linkedin.giovannitavares.com/',
     icon: 'Linkedin',
   },
   {
-    id: 'email',
-    name: 'Email',
-    url: 'mailto:contact@giovannitavares.com',
-    icon: 'Mail',
-  },
+    id: 'credly',
+    name: 'Credly',
+    url: 'https://credly.giovannitavares.com/',
+    icon: 'Credly',
+  }
 ];

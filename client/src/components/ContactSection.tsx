@@ -37,7 +37,7 @@ export function ContactSection() {
     const iconMap: Record<string, React.ReactNode> = {
       Github: <Icons.Github className="h-5 w-5" />,
       Linkedin: <Icons.Linkedin className="h-5 w-5" />,
-      Mail: <Icons.Mail className="h-5 w-5" />,
+      Credly: <Icons.Award className="h-5 w-5" />
     };
     return iconMap[iconName] || null;
   };
@@ -107,20 +107,6 @@ export function ContactSection() {
               </div>
             </motion.div>
 
-            {/* Call to Action */}
-            <motion.div
-              variants={itemVariants}
-              className="pt-8 border-t border-border space-y-4"
-            >
-              <p className="text-base text-muted-foreground leading-relaxed">
-                Estou sempre aberto para novas oportunidades e colaborações.
-                Sinta-se à vontade para entrar em contato!
-              </p>
-              <p className="text-base text-muted-foreground leading-relaxed">
-                I am always open to new opportunities and collaborations.
-                Feel free to reach out!
-              </p>
-            </motion.div>
           </motion.div>
         </motion.div>
       </div>
