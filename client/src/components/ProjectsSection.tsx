@@ -69,7 +69,7 @@ export function ProjectsSection() {
                 className="group border border-border overflow-hidden hover:border-primary transition-colors"
               >
                 {/* Project Image */}
-                <div className="rounded-lg overflow-hidden" style={{ aspectRatio: '1300 / 975' }}>
+                <div className="rounded-lg overflow-hidden" style={{ aspectRatio: '1300 / 760' }}>
                   <motion.img
                     src={project.image}
                     alt={project.title}
@@ -77,7 +77,6 @@ export function ProjectsSection() {
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.4 }}
                   />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
                 </div>
 
                 {/* Project Content */}

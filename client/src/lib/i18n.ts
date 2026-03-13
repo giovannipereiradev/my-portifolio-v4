@@ -36,10 +36,8 @@ export const translations = {
     },
     // Project Descriptions
     project_descriptions: {
-      'natis-recipes': 'Plataforma de receitas com busca avançada e filtros inteligentes. Desenvolvida com foco em experiência do usuário e performance.',
-      'discord-bot-structure-v14': 'Estrutura robusta para desenvolvimento de bots Discord usando Discord.js v14. Inclui sistema de comandos, eventos e middleware.',
-      'live-web-chat': 'Sistema de chat em tempo real com WebSocket. Suporta múltiplas salas, autenticação de usuários e histórico de mensagens.',
-      'discord-ticket-bot': 'Bot para gerenciamento de tickets em servidores Discord. Automatiza criação, fechamento e arquivamento de tickets.',
+      'natis-recipes': 'Aplicação web de gerenciamento de receitas que permite organizar, visualizar e armazenar receitas culinárias em uma interface simples e intuitiva.',
+      'live-web-chat': 'Interface simples de chat web em tempo real que permite aos usuários enviar e receber mensagens diretamente no navegador. Desenvolvida para demonstrar conceitos básicos de interação front-end e comunicação em tempo real.'
     },
     // Contact Section
     contact: {
@@ -88,10 +86,8 @@ export const translations = {
     },
     // Project Descriptions
     project_descriptions: {
-      'natis-recipes': 'Recipe platform with advanced search and intelligent filters. Developed with focus on user experience and performance.',
-      'discord-bot-structure-v14': 'Robust structure for Discord bot development using Discord.js v14. Includes command system, events, and middleware.',
-      'live-web-chat': 'Real-time chat system with WebSocket. Supports multiple rooms, user authentication, and message history.',
-      'discord-ticket-bot': 'Bot for managing tickets in Discord servers. Automates ticket creation, closure, and archiving.',
+      'natis-recipes': 'Recipe management web application that allows users to organize, browse, and store cooking recipes through a clean and intuitive interface.',
+      'live-web-chat': 'Simple real-time web chat interface that allows users to send and receive messages directly in the browser. Built to demonstrate basic front-end interaction and live communication concepts.'
     },
     // Contact Section
     contact: {

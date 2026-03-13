@@ -26,35 +26,15 @@ export const projects: Project[] = [
     image: '/images/natis-recipes.png'
   },
   {
-    id: 'discord-bot-structure-v14',
-    title: 'Discord Bot Structure v14',
-    descriptionKey: 'discord-bot-structure-v14',
-    technologies: ['Discord.js', 'TypeScript', 'Node.js'],
-    year: 2024,
-    demoUrl: 'https://github.com',
-    githubUrl: 'https://github.com',
-    image: '/images/discord-bot.png'
-  },
-  {
     id: 'live-web-chat',
     title: 'Live Web Chat',
     descriptionKey: 'live-web-chat',
-    technologies: ['React', 'WebSocket', 'Node.js', 'Express'],
-    year: 2023,
-    demoUrl: 'https://github.com',
-    githubUrl: 'https://github.com',
-    image: '/images/chat-app.png'
-  },
-  {
-    id: 'discord-ticket-bot',
-    title: 'Discord Ticket Bot',
-    descriptionKey: 'discord-ticket-bot',
-    technologies: ['Discord.js', 'TypeScript', 'MongoDB'],
-    year: 2023,
-    demoUrl: 'https://github.com',
-    githubUrl: 'https://github.com',
-    image: '/images/ticket-bot.png'
-  },
+    technologies: ['HTML & CSS', 'JavaScript', 'Docker', 'Redis', 'WebSocket'],
+    year: 2025,
+    demoUrl: 'https://github.com/giovannipereiradev/live-web-chat',
+    githubUrl: 'https://github.com/giovannipereiradev/live-web-chat',
+    image: '/images/live-web-chat.png',
+  }
 ];
 
 /**
