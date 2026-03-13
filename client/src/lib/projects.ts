@@ -15,15 +15,15 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  {
+  { 
     id: 'natis-recipes',
     title: 'Natis Recipes',
     descriptionKey: 'natis-recipes',
-    technologies: ['React', 'TypeScript', 'Node.js', 'MongoDB'],
-    year: 2024,
-    demoUrl: 'https://github.com',
-    githubUrl: 'https://github.com',
-    image: '/images/recipe-app.png',
+    technologies: ['Python', 'MkDocs', 'Markdown'],
+    year: 2025,
+    demoUrl: 'https://natisrecipes.giovannitavares.com',
+    githubUrl: 'https://github.com/giovannipereiradev/natis-recipes',
+    image: '/images/natis-recipes.png'
   },
   {
     id: 'discord-bot-structure-v14',
@@ -33,7 +33,7 @@ export const projects: Project[] = [
     year: 2024,
     demoUrl: 'https://github.com',
     githubUrl: 'https://github.com',
-    image: '/images/discord-bot.png',
+    image: '/images/discord-bot.png'
   },
   {
     id: 'live-web-chat',
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     year: 2023,
     demoUrl: 'https://github.com',
     githubUrl: 'https://github.com',
-    image: '/images/chat-app.png',
+    image: '/images/chat-app.png'
   },
   {
     id: 'discord-ticket-bot',
@@ -53,7 +53,7 @@ export const projects: Project[] = [
     year: 2023,
     demoUrl: 'https://github.com',
     githubUrl: 'https://github.com',
-    image: '/images/ticket-bot.png',
+    image: '/images/ticket-bot.png'
   },
 ];
 

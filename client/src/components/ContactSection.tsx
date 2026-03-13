@@ -98,7 +98,7 @@ export function ContactSection() {
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex items-center gap-2 px-4 py-2 border border-border rounded hover:border-primary hover:bg-primary/5 transition-colors"
+                    className="flex items-center gap-2 px-4 py-2 border border-border rounded hover:border-primary hover:bg-primary/30 transition-colors"
                   >
                     {getIcon(link.icon)}
                     <span className="font-mono text-sm">{link.name}</span>
