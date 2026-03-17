@@ -43,9 +43,6 @@ export function HeroSection() {
             <p className="font-mono text-xl md:text-2xl text-primary font-bold">
               {t.hero.title}
             </p>
-            <p className="font-mono text-sm md:text-base text-muted-foreground">
-              {t.hero.subtitle}
-            </p>
           </motion.div>
 
           {/* Description */}

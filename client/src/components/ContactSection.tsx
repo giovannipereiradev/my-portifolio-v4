@@ -8,20 +8,18 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { socialLinks } from '@/lib/projects';
 import { fadeUpContainer, fadeUpItem } from '@/lib/animations';
 import { motion } from 'framer-motion';
-import * as Icons from 'lucide-react';
+import { Github, Linkedin, Award } from 'lucide-react';
 
 export function ContactSection() {
   const { t } = useLanguage();
 
-  // Type-safe icon mapping
-  const getIcon = (iconName: string) => {
-    const iconMap: Record<string, React.ReactNode> = {
-      Github: <Icons.Github className="h-5 w-5" />,
-      Linkedin: <Icons.Linkedin className="h-5 w-5" />,
-      Credly: <Icons.Award className="h-5 w-5" />
-    };
-    return iconMap[iconName] || null;
+  const iconMap: Record<string, React.ReactNode> = {
+    Github: <Github className="h-5 w-5" />,
+    Linkedin: <Linkedin className="h-5 w-5" />,
+    Credly: <Award className="h-5 w-5" />,
   };
+
+  const getIcon = (iconName: string) => iconMap[iconName] ?? null;
 
   return (
     <section
