@@ -12,10 +12,9 @@ import { motion } from 'framer-motion';
 
 interface NavbarProps {
   activeSection?: string;
-  onNavigate?: (section: string) => void;
 }
 
-export function Navbar({ activeSection, onNavigate }: NavbarProps) {
+export function Navbar({ activeSection }: NavbarProps) {
   const { theme, toggleTheme } = useTheme();
   const { language, setLanguage, t } = useLanguage();
 
@@ -26,7 +25,6 @@ export function Navbar({ activeSection, onNavigate }: NavbarProps) {
   ];
 
   const handleNavClick = (id: string) => {
-    onNavigate?.(id);
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });

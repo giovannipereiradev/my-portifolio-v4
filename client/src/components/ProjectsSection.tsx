@@ -76,7 +76,7 @@ export function ProjectsSection() {
 
                   {/* Description */}
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    {t.project_descriptions[project.descriptionKey as keyof typeof t.project_descriptions] || ''}
+                    {t.project_descriptions[project.descriptionKey]}
                   </p>
 
                   {/* Technologies */}

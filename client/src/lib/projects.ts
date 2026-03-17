@@ -3,10 +3,14 @@
  * Centralized data structure for all portfolio projects
  */
 
+import type { translations } from './i18n';
+
+export type DescriptionKey = keyof typeof translations['pt']['project_descriptions'];
+
 export interface Project {
   id: string;
   title: string;
-  descriptionKey: string; // Key to find translation in i18n
+  descriptionKey: DescriptionKey;
   technologies: string[];
   year: number;
   demoUrl?: string;
