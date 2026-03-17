@@ -47,7 +47,7 @@ export function ProjectsSection() {
               <motion.div
                 key={project.id}
                 variants={fadeUpItem}
-                className="group border border-border overflow-hidden hover:border-primary transition-colors"
+                className="group border border-border overflow-hidden hover:border-primary transition-colors flex flex-col"
               >
                 {/* Project Image */}
                 <div className="rounded-lg overflow-hidden" style={{ aspectRatio: '1300 / 760' }}>
@@ -61,7 +61,7 @@ export function ProjectsSection() {
                 </div>
 
                 {/* Project Content */}
-                <div className="p-6 space-y-4">
+                <div className="p-6 flex flex-col flex-1 gap-4">
                   {/* Title and Year */}
                   <div className="space-y-2">
                     <div className="flex items-start justify-between gap-4">
@@ -97,7 +97,7 @@ export function ProjectsSection() {
                   </div>
 
                   {/* Action Buttons */}
-                  <div className="flex gap-3 pt-4 border-t border-border">
+                  <div className="flex gap-3 pt-4 border-t border-border mt-auto">
                     {project.demoUrl && project.demoUrl !== '#' && (
                       <motion.a
                         href={project.demoUrl}
