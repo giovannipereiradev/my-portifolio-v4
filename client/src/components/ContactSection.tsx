@@ -6,31 +6,12 @@
 
 import { useLanguage } from '@/contexts/LanguageContext';
 import { socialLinks } from '@/lib/projects';
+import { fadeUpContainer, fadeUpItem } from '@/lib/animations';
 import { motion } from 'framer-motion';
 import * as Icons from 'lucide-react';
 
 export function ContactSection() {
   const { t } = useLanguage();
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6 },
-    },
-  };
 
   // Type-safe icon mapping
   const getIcon = (iconName: string) => {
@@ -65,14 +46,14 @@ export function ContactSection() {
 
           {/* Contact Info */}
           <motion.div
-            variants={containerVariants}
+            variants={fadeUpContainer}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-100px' }}
             className="space-y-8"
           >
             {/* Email */}
-            <motion.div variants={itemVariants} className="space-y-2">
+            <motion.div variants={fadeUpItem} className="space-y-2">
               <p className="font-mono text-sm text-muted-foreground">
                 {t.contact.email}
               </p>
@@ -85,7 +66,7 @@ export function ContactSection() {
             </motion.div>
 
             {/* Social Links */}
-            <motion.div variants={itemVariants} className="space-y-4">
+            <motion.div variants={fadeUpItem} className="space-y-4">
               <p className="font-mono text-sm text-muted-foreground">
                 Social & Links
               </p>

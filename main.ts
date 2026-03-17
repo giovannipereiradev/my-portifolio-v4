@@ -3,17 +3,17 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const app = express();
 const PORT = process.env.PORT || 8080;
 
-// Servir arquivos estáticos da pasta dist
+const app = express();
+
 app.use(express.static(path.join(__dirname, 'dist')));
 
-// Redirecionar todas as rotas para index.html (para SPA)
-app.get('*', (req, res) => {
+// Fallback to index.html for SPA client-side routing
+app.get('*', (_req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 app.listen(PORT, () => {
-  console.log(`Servidor rodando em http://localhost:${PORT}` );
+  console.log(`Server running at http://localhost:${PORT}`);
 });

@@ -5,32 +5,13 @@
  */
 
 import { useLanguage } from '@/contexts/LanguageContext';
+import { fadeUpContainer, fadeUpItem } from '@/lib/animations';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { ArrowDown, Mail } from 'lucide-react';
 
 export function HeroSection() {
   const { t } = useLanguage();
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6 },
-    },
-  };
 
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-background pt-20">
@@ -47,7 +28,7 @@ export function HeroSection() {
 
       <div className="relative z-10 container max-w-4xl">
         <motion.div
-          variants={containerVariants}
+          variants={fadeUpContainer}
           initial="hidden"
           animate="visible"
           className="space-y-8"
@@ -55,7 +36,7 @@ export function HeroSection() {
 
 
           {/* Main Heading */}
-          <motion.div variants={itemVariants} className="space-y-2">
+          <motion.div variants={fadeUpItem} className="space-y-2">
             <h1 className="font-mono text-6xl md:text-7xl font-bold text-foreground leading-tight">
               {t.hero.name}
             </h1>
@@ -69,7 +50,7 @@ export function HeroSection() {
 
           {/* Description */}
           <motion.p
-            variants={itemVariants}
+            variants={fadeUpItem}
             className="max-w-2xl text-base md:text-lg text-muted-foreground leading-relaxed"
           >
             {t.hero.description}
@@ -77,7 +58,7 @@ export function HeroSection() {
 
           {/* CTA Buttons */}
           <motion.div
-            variants={itemVariants}
+            variants={fadeUpItem}
             className="flex flex-col sm:flex-row gap-4 pt-4"
           >
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>

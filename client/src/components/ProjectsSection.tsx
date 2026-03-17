@@ -6,32 +6,13 @@
 
 import { useLanguage } from '@/contexts/LanguageContext';
 import { projects } from '@/lib/projects';
+import { fadeUpContainer, fadeUpItem } from '@/lib/animations';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { Github, ExternalLink } from 'lucide-react';
 
 export function ProjectsSection() {
   const { t } = useLanguage();
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6 },
-    },
-  };
 
   return (
     <section
@@ -56,7 +37,7 @@ export function ProjectsSection() {
 
           {/* Projects Grid */}
           <motion.div
-            variants={containerVariants}
+            variants={fadeUpContainer}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-100px' }}
@@ -65,7 +46,7 @@ export function ProjectsSection() {
             {projects.map((project) => (
               <motion.div
                 key={project.id}
-                variants={itemVariants}
+                variants={fadeUpItem}
                 className="group border border-border overflow-hidden hover:border-primary transition-colors"
               >
                 {/* Project Image */}
