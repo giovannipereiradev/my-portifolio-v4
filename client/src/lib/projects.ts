@@ -46,11 +46,13 @@ export const projects: Project[] = [
  * Centralized data structure for social media and contact links
  */
 
+export type SocialIcon = 'Github' | 'Linkedin' | 'Credly';
+
 export interface SocialLink {
   id: string;
   name: string;
   url: string;
-  icon: string; // lucide-react icon name
+  icon: SocialIcon;
 }
 
 export const socialLinks: SocialLink[] = [

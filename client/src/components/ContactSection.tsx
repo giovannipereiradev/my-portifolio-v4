@@ -5,7 +5,7 @@
  */
 
 import { useLanguage } from '@/contexts/LanguageContext';
-import { socialLinks } from '@/lib/projects';
+import { socialLinks, type SocialIcon } from '@/lib/projects';
 import { fadeUpContainer, fadeUpItem } from '@/lib/animations';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Award } from 'lucide-react';
@@ -13,7 +13,7 @@ import { Github, Linkedin, Award } from 'lucide-react';
 export function ContactSection() {
   const { t } = useLanguage();
 
-  const iconMap: Record<string, React.ReactNode> = {
+  const iconMap: Record<SocialIcon, React.ReactNode> = {
     Github: <Github className="h-5 w-5" />,
     Linkedin: <Linkedin className="h-5 w-5" />,
     Credly: <Award className="h-5 w-5" />,
