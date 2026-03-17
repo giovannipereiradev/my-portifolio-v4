@@ -32,10 +32,18 @@ export function AboutSection() {
           </div>
 
           {/* Content Area */}
-          <div className="prose prose-invert max-w-none">
+          <div className="flex flex-col-reverse md:grid md:grid-cols-[1fr_260px] gap-10 md:gap-15 items-start">
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed whitespace-pre-wrap">
               {t.about.content}
             </p>
+
+            <div className="mx-auto md:mx-0 w-56 md:w-full shrink-0">
+              <img
+                src="/images/me.png"
+                alt="Giovanni Tavares"
+                className="w-full object-cover drop-shadow-[0_8px_24px_rgba(0,0,0,0.18)]"
+              />
+            </div>
           </div>
         </motion.div>
       </div>
