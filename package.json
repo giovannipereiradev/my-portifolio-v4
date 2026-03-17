@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "start": "vite build && tsx main.ts",
+    "start": "tsx main.ts",
     "preview": "vite preview --host",
     "check": "tsc --noEmit",
     "format": "prettier --write ."
