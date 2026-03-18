@@ -5,6 +5,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import Home from "./pages/Home";
+import CustomCursor from "./components/CustomCursor";
 
 function Router() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <ThemeProvider defaultTheme="light" switchable>
         <LanguageProvider>
           <TooltipProvider>
+            <CustomCursor />
             <Router />
           </TooltipProvider>
         </LanguageProvider>

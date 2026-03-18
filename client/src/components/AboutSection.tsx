@@ -32,7 +32,7 @@ export function AboutSection() {
           </div>
 
           {/* Content Area */}
-          <div className="flex flex-col-reverse md:grid md:grid-cols-[1fr_260px] gap-10 md:gap-15 items-start">
+          <div className="flex flex-col-reverse md:grid md:grid-cols-[1fr_360px] gap-10 md:gap-15 items-start">
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed whitespace-pre-wrap">
               {t.about.content}
             </p>
