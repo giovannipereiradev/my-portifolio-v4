@@ -238,6 +238,26 @@
 }
 
 /* ============================================================================
+   LETTER HOVER
+   ============================================================================ */
+
+.letter-hover-container {
+  position: relative;
+  display: inline-block;
+}
+
+.letter-hover {
+  display: inline-block;
+  transition: color 3s ease; /* lento ao voltar */
+}
+
+.letter-hover:hover {
+  color: var(--primary);
+  transition: color 0.15s ease; /* rápido ao colorir */
+}
+
+
+/* ============================================================================
    COMPONENT STYLES
    ============================================================================ */
 

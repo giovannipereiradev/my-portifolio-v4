@@ -9,6 +9,7 @@ import { fadeUpContainer, fadeUpItem } from '@/lib/animations';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { ArrowDown, Mail } from 'lucide-react';
+import { LetterHover } from '@/components/LetterHover';
 
 export function HeroSection() {
   const { t } = useLanguage();
@@ -38,7 +39,7 @@ export function HeroSection() {
           {/* Main Heading */}
           <motion.div variants={fadeUpItem} className="space-y-2">
             <h1 className="font-mono text-6xl md:text-7xl font-bold text-foreground leading-tight">
-              {t.hero.name}
+              <LetterHover text={t.hero.name} />
             </h1>
             <p className="font-mono text-xl md:text-2xl text-primary font-bold">
               {t.hero.title}
