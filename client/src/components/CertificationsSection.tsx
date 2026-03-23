@@ -176,13 +176,11 @@ export function CertificationsSection() {
                     className="group block"
                     title={cert.alt}
                   >
-                    <div className="relative overflow-hidden transition-transform duration-300 group-hover:scale-105">
-                      <img
-                        src={cert.image}
-                        alt={cert.alt}
-                        className="w-full h-auto object-contain drop-shadow-[0_4px_16px_rgba(0,0,0,0.12)] transition-opacity duration-300 group-hover:opacity-85"
-                      />
-                    </div>
+                    <img
+                      src={cert.image}
+                      alt={cert.alt}
+                      className="w-full h-auto object-contain transition-all duration-300 group-hover:scale-105 group-hover:opacity-80"
+                    />
                   </a>
                 </div>
               ))}
