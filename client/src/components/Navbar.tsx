@@ -20,6 +20,7 @@ export function Navbar({ activeSection }: NavbarProps) {
 
   const navItems = [
     { id: 'about', label: t.nav.about },
+    { id: 'certifications', label: t.nav.certifications },
     { id: 'projects', label: t.nav.projects },
     { id: 'contact', label: t.nav.contact },
   ];
@@ -29,6 +30,10 @@ export function Navbar({ activeSection }: NavbarProps) {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleLogoClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -42,6 +47,7 @@ export function Navbar({ activeSection }: NavbarProps) {
         {/* Logo/Brand */}
         <motion.div
           whileHover={{ y: -3 }}
+          onClick={handleLogoClick}
           className="font-mono text-lg font-bold text-foreground cursor-pointer"
         >
           GT

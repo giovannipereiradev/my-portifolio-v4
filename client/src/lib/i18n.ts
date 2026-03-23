@@ -10,6 +10,7 @@ export const translations = {
     // Navigation
     nav: {
       about: 'Sobre',
+      certifications: 'Certificações',
       projects: 'Projetos',
       contact: 'Contato',
     },
@@ -39,6 +40,10 @@ export const translations = {
       'natis-recipes': 'Aplicação web de gerenciamento de receitas que permite organizar, visualizar e armazenar receitas culinárias em uma interface simples e intuitiva.',
       'live-web-chat': 'Interface simples de chat web em tempo real que permite aos usuários enviar e receber mensagens diretamente no navegador. Desenvolvida para demonstrar conceitos básicos de interação front-end e comunicação em tempo real.'
     },
+    // Certifications Section
+    certifications: {
+      title: 'Certificações',
+    },
     // Contact Section
     contact: {
       title: 'Contato',
@@ -57,6 +62,7 @@ export const translations = {
     // Navigation
     nav: {
       about: 'About',
+      certifications: 'Certifications',
       projects: 'Projects',
       contact: 'Contact',
     },
@@ -85,6 +91,10 @@ export const translations = {
     project_descriptions: {
       'natis-recipes': 'Recipe management web application that allows users to organize, browse, and store cooking recipes through a clean and intuitive interface.',
       'live-web-chat': 'Simple real-time web chat interface that allows users to send and receive messages directly in the browser. Built to demonstrate basic front-end interaction and live communication concepts.'
+    },
+    // Certifications Section
+    certifications: {
+      title: 'Certifications',
     },
     // Contact Section
     contact: {

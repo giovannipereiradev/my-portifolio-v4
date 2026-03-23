@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 import { Navbar } from '@/components/Navbar';
 import { HeroSection } from '@/components/HeroSection';
 import { AboutSection } from '@/components/AboutSection';
+import { CertificationsSection } from '@/components/CertificationsSection';
 import { ProjectsSection } from '@/components/ProjectsSection';
 import { ContactSection } from '@/components/ContactSection';
 import { Footer } from '@/components/Footer';
@@ -26,7 +27,7 @@ export default function Home() {
       { rootMargin: '-40% 0px -55% 0px' }
     );
 
-    ['about', 'projects', 'contact'].forEach((id) => {
+    ['about', 'certifications', 'projects', 'contact'].forEach((id) => {
       const el = document.getElementById(id);
       if (el) observer.observe(el);
     });
@@ -40,6 +41,7 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection />
         <AboutSection />
+        <CertificationsSection />
         <ProjectsSection />
         <ContactSection />
       </main>
