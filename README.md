@@ -19,8 +19,6 @@
 
 Personal portfolio built with **React 19** and **Vite**, styled with **Tailwind CSS 4** and animated with **Framer Motion**. The site features a minimalist design with monospace typography, light/dark theme switching, multilingual support (Portuguese/English), and interactive components such as a scroll-hijacked certification carousel, custom cursor, and per-letter name animation.
 
-The app is served by an **Express** server in production, enabling deployment on platforms that require a running Node.js process.
-
 ## Features
 
 | Feature | Description |
@@ -44,16 +42,16 @@ The app follows a clear separation between **client** (React/Vite) and **server*
 
 ## Technologies Used
 
-- **[React](https://react.dev/) `^19.2.1`** — main library for building the interface; uses modern hooks and functional components.
-- **[Vite](https://vitejs.dev/) `^7.1.7`** — ultra-fast bundler and dev server with HMR; configured with React and Tailwind CSS plugins.
-- **[TypeScript](https://www.typescriptlang.org/) `^5.6.3`** — static typing throughout the project, on both the client and the Express server.
-- **[Tailwind CSS](https://tailwindcss.com/) `^4.1.14`** — CSS utilities; integrated as a Vite plugin (`@tailwindcss/vite`).
-- **[Framer Motion](https://www.framer.com/motion/) `^12.23.22`** — declarative entrance, exit, and hover animations on all page components.
-- **[Radix UI](https://www.radix-ui.com/)** — accessible UI primitives (tooltip, scroll-area, tabs, dialog, and 30+ other components).
-- **[Embla Carousel React](https://www.embla-carousel.com/) `^8.6.0`** — certification slider carousel with programmatic control via API.
-- **[Wouter](https://github.com/molefrog/wouter) `^3.3.5`** — lightweight client-side router; defines routes `/` (Home) and `*` (NotFound).
-- **[Express](https://expressjs.com/) `^4.21.2`** — HTTP server for serving the static build in production on port `8080`.
-- **[lucide-react](https://lucide.dev/)** — SVG icons as React components.
+- **[React](https://react.dev/) `^19.2.1`** : main library for building the interface; uses modern hooks and functional components.
+- **[Vite](https://vitejs.dev/) `^7.1.7`** : ultra-fast bundler and dev server with HMR; configured with React and Tailwind CSS plugins.
+- **[TypeScript](https://www.typescriptlang.org/) `^5.6.3`** : static typing throughout the project, on both the client and the Express server.
+- **[Tailwind CSS](https://tailwindcss.com/) `^4.1.14`** : CSS utilities; integrated as a Vite plugin (`@tailwindcss/vite`).
+- **[Framer Motion](https://www.framer.com/motion/) `^12.23.22`** : declarative entrance, exit, and hover animations on all page components.
+- **[Radix UI](https://www.radix-ui.com/)** : accessible UI primitives (tooltip, scroll-area, tabs, dialog, and 30+ other components).
+- **[Embla Carousel React](https://www.embla-carousel.com/) `^8.6.0`** : certification slider carousel with programmatic control via API.
+- **[Wouter](https://github.com/molefrog/wouter) `^3.3.5`** : lightweight client-side router; defines routes `/` (Home) and `*` (NotFound).
+- **[Express](https://expressjs.com/) `^4.21.2`** : HTTP server for serving the static build in production on port `8080`.
+- **[lucide-react](https://lucide.dev/)** : SVG icons as React components.
 
 ## Installation
 
@@ -84,7 +82,7 @@ npm install
 ```
 my-portifolio-v4/
 │
-├── main.ts                           # Express server — serves the static build
+├── main.ts                           # Express server : serves the static build
 ├── vite.config.ts                    # Vite configuration (plugins, alias @)
 ├── tsconfig.json                     # Root TypeScript config (for main.ts)
 ├── package.json
@@ -96,12 +94,12 @@ my-portifolio-v4/
     ├── tsconfig.json                 # Client TypeScript config
     │
     └── src/
-        ├── main.tsx                  # Entry point — ReactDOM.createRoot
+        ├── main.tsx                  # Entry point : ReactDOM.createRoot
         ├── App.tsx                   # Global providers + routing (Wouter)
         ├── index.css                 # Global styles + CSS variables + Tailwind
         │
         ├── pages/
-        │   ├── Home.tsx              # Main page — composes all sections
+        │   ├── Home.tsx              # Main page : composes all sections
         │   └── NotFound.tsx          # 404 page
         │
         ├── components/
