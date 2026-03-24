@@ -20,6 +20,16 @@ export interface Project {
 
 export const projects: Project[] = [
   { 
+    id: 'my-portfolio-v4',
+    title: 'My Portfolio V4',
+    descriptionKey: 'my-portfolio-v4',
+    technologies: ['React', 'Vite', 'TypeScript', 'Tailwind CSS'],
+    year: 2026,
+    demoUrl: 'https://giovannitavares.com',
+    githubUrl: 'https://github.com/giovannipereiradev/my-portifolio-v4',
+    image: '/images/projects/my-portfolio-v4.png'
+  },
+  { 
     id: 'natis-recipes',
     title: 'Natis Recipes',
     descriptionKey: 'natis-recipes',
@@ -27,7 +37,25 @@ export const projects: Project[] = [
     year: 2025,
     demoUrl: 'https://natisrecipes.giovannitavares.com',
     githubUrl: 'https://github.com/giovannipereiradev/natis-recipes',
-    image: '/images/natis-recipes.png'
+    image: '/images/projects/natis-recipes.png'
+  },
+  { 
+    id: 'discord-bot-structure-v14',
+    title: 'Discord Bot Structure V14',
+    descriptionKey: 'discord-bot-structure-v14',
+    technologies: ['Node.js', 'Discord.js', 'MongoDB'],
+    year: 2025,
+    githubUrl: 'https://github.com/giovannipereiradev/discord-bot-structure-v14',
+    image: '/images/projects/discord-bot-structure-v14.png'
+  },
+  { 
+    id: 'discord-ticket-bot-v14',
+    title: 'Discord Ticket Bot V14',
+    descriptionKey: 'discord-ticket-bot-v14',
+    technologies: ['Node.js', 'Discord.js', 'SQLite'],
+    year: 2025,
+    githubUrl: 'https://github.com/giovannipereiradev/discord-ticket-bot-v14',
+    image: '/images/projects/discord-ticket-bot-v14.png'
   },
   {
     id: 'live-web-chat',

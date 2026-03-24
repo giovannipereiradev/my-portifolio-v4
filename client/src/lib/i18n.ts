@@ -37,7 +37,10 @@ export const translations = {
     },
     // Project Descriptions
     project_descriptions: {
+      'my-portfolio-v4': 'Portfólio pessoal com suporte a múltiplos idiomas, alternância de tema claro/escuro e design responsivo para apresentar projetos e certificações.',
       'natis-recipes': 'Aplicação web de gerenciamento de receitas que permite organizar, visualizar e armazenar receitas culinárias em uma interface simples e intuitiva.',
+      'discord-bot-structure-v14': 'Estrutura modular e reutilizável para criação de bots no Discord. Inclui sistema de comandos por slash e handlers de eventos prontos para extensão.',
+      'discord-ticket-bot-v14': 'Bot de suporte para servidores Discord com sistema completo de tickets. Permite abrir, gerenciar e fechar chamados diretamente pelo servidor, com registro de histórico.',
       'live-web-chat': 'Interface simples de chat web em tempo real que permite aos usuários enviar e receber mensagens diretamente no navegador. Desenvolvida para demonstrar conceitos básicos de interação front-end e comunicação em tempo real.'
     },
     // Certifications Section
@@ -89,7 +92,10 @@ export const translations = {
     },
     // Project Descriptions
     project_descriptions: {
+      'my-portfolio-v4': 'Personal portfolio with multi-language support, light/dark theme toggle, and responsive design to showcase projects and certifications.',
       'natis-recipes': 'Recipe management web application that allows users to organize, browse, and store cooking recipes through a clean and intuitive interface.',
+      'discord-bot-structure-v14': 'Modular and reusable foundation for building Discord bots. Includes a slash command system and event handlers ready to extend.',
+      'discord-ticket-bot-v14': 'Support bot for Discord servers with a full ticket system. Allows users to open, manage, and close support requests directly in the server, with history tracking.',
       'live-web-chat': 'Simple real-time web chat interface that allows users to send and receive messages directly in the browser. Built to demonstrate basic front-end interaction and live communication concepts.'
     },
     // Certifications Section
