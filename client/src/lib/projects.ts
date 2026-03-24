@@ -65,7 +65,7 @@ export const projects: Project[] = [
     year: 2025,
     demoUrl: 'https://github.com/giovannipereiradev/live-web-chat',
     githubUrl: 'https://github.com/giovannipereiradev/live-web-chat',
-    image: '/images/live-web-chat.png',
+    image: '/images/projects/live-web-chat.png',
   }
 ];
 
