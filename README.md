@@ -58,7 +58,6 @@ The app follows a clear separation between **client** (React/Vite) and **server*
 Prerequisites:
 
 - **Node.js** `>= 18.0.0`
-- **pnpm** `>= 10.0.0`
 
 ```bash
 git clone https://github.com/giovannipereiradev/my-portifolio-v4.git
@@ -135,13 +134,13 @@ my-portifolio-v4/
 
 ```bash
 # Development
-pnpm dev
+npm run dev
 
 # Production build
-pnpm build
+npm run build
 
 # Serve in production
-pnpm start
+npm start
 ```
 
 **Adding a new project**

@@ -58,12 +58,11 @@ A aplicação segue uma separação clara entre **client** (React/Vite) e **serv
 Pré-requisitos:
 
 - **Node.js** `>= 18.0.0`
-- **pnpm** `>= 10.0.0`
 
 ```bash
 git clone https://github.com/giovannipereiradev/my-portifolio-v4.git
 cd my-portifolio-v4
-pnpm install
+npm install
 ```
 
 ## Scripts Disponíveis
