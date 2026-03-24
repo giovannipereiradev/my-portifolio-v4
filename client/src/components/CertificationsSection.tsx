@@ -12,37 +12,37 @@ import { cn } from '@/lib/utils';
 
 const certifications = [
   {
-    image: '/images/rsa-id-plus-certified-associate.1.png',
+    image: '/images/badges/rsa-id-plus-certified-associate.png',
     alt: 'RSA ID Plus Certified Associate',
     url: 'https://www.credly.com/badges/c7b7940a-588e-4e8d-b167-b034e9f267a8/public_url',
   },
   {
-    image: '/images/rsa-id-plus-certified-administrator.png',
+    image: '/images/badges/rsa-id-plus-certified-administrator.png',
     alt: 'RSA ID Plus Certified Administrator',
     url: 'https://www.credly.com/badges/62bbb5e8-a675-4d37-86c6-6384bf330d29/public_url',
   },
   {
-    image: '/images/rsa-securid-certified-administrator.png',
+    image: '/images/badges/rsa-securid-certified-administrator.png',
     alt: 'RSA SecurID Certified Administrator',
     url: 'https://www.credly.com/badges/8af7b259-1dfe-4c3e-850d-fe23a3883dc1/public_url',
   },
   {
-    image: '/images/rsa-governance-lifecycle-certified-associate.png',
+    image: '/images/badges/rsa-governance-lifecycle-certified-associate.png',
     alt: 'RSA Governance & Lifecycle Certified Associate',
     url: 'https://www.credly.com/badges/92a3dc28-e02c-455a-b848-87c24a1cd623/public_url',
   },
   {
-    image: '/images/rsa-governance-lifecycle-certified-administrator.png',
+    image: '/images/badges/rsa-governance-lifecycle-certified-administrator.png',
     alt: 'RSA Governance & Lifecycle Certified Administrator',
     url: 'https://www.credly.com/badges/702e501d-7f5a-45e3-8294-923bac5449d9/public_url',
   },
   {
-    image: '/images/rsa-governance-lifecycle-certified-implementer.1.png',
+    image: '/images/badges/rsa-governance-lifecycle-certified-implementer.png',
     alt: 'RSA Governance & Lifecycle Certified Implementer',
     url: 'https://www.credly.com/badges/ca48e012-aca2-484f-bb00-5151ae696681/public_url',
   },
   {
-    image: '/images/sailpoint-identity-security-professional-credential.png',
+    image: '/images/badges/sailpoint-identity-security-professional-credential.png',
     alt: 'SailPoint Identity Security Professional',
     url: 'https://www.credly.com/badges/9ff7c8e8-fb8c-4be8-8c02-8a40b67941dc/public_url',
   },
